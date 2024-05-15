@@ -9,7 +9,7 @@ const LandingComponent = (): JSX.Element => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setShowName(false);
-    }, 1000);
+    }, 4000);
 
     return () => clearTimeout(timeout);
   }, []);

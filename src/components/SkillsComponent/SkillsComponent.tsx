@@ -46,7 +46,7 @@ const SkillsComponent = (props: { data: ISkillsItem[] }): JSX.Element => {
                 cursor: "default",
               }}
             >
-              <CustomCard key={index} data={item} />
+              <CustomCard key={index} data={item} isSkills />
             </div>
           );
         })}

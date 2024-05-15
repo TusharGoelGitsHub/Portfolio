@@ -46,7 +46,6 @@ const CustomCard = (props: ICustomCardProps): JSX.Element => {
                   color: colors.offWhite,
                   fontSize: 24,
                   display: "flex",
-                  // justifyContent: "space-between",
                   alignItems: "center",
                   gap: 15,
                   width: "100%",

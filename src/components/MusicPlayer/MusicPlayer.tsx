@@ -9,7 +9,7 @@ const MusicPlayer = (): JSX.Element => {
         <div style={{ display: "flex", justifyContent: "center" }}>
           <ReactPlayer
             url="bensound-memories.mp3"
-            playing={true}
+            playing={false}
             controls={true}
             width="80%"
             height="50px"

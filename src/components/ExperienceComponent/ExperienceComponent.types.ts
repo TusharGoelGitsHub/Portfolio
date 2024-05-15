@@ -35,6 +35,12 @@ export const ExperienceData: IExperienceItem[] = [
     mainHeading: "Assistant Software Engineer Trainee",
     subHeading: "Tata Consultancy Services",
     period: "April 2021 - Mar 2022",
-    content: ["hello", "hey", "bye"],
+    content: [
+      "Engineered the Unified DevOps Portal, seamlessly integrating work tracking, interactive backlogs, and planning tools for enhanced team efficiency and collaboration.",
+      "Orchestrated a versatile CI/CD pipeline across languages and cloud platforms, synchronized with GitHub and Git providers, enabling continuous deployment and autonomous operations.",
+      "Demonstrated ReactJS prowess in designing dynamic forms, aligning input parameters with project prerequisites for optimal user experiences.",
+      "Translated intricate client needs into meticulous UI designs, presenting feature demos for iterative refinement and improved user interaction.",
+      "Integrated advanced UI components – React-Table, Graphs, Modals, Carousel Sliders – leveraging ReactJS, JavaScript, and React libraries for an engaging interface.",
+    ],
   },
 ];

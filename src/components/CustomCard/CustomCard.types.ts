@@ -3,4 +3,5 @@ import { IExperienceItem } from "../ExperienceComponent/ExperienceComponent.type
 export interface ICustomCardProps {
   data: IExperienceItem;
   height?: number;
+  isSkills?: boolean;
 }
