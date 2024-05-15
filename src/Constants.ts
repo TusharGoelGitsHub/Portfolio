@@ -14,7 +14,8 @@ export const constants = {
   developerName: "tushargoel",
   linkedinLink: "https://www.linkedin.com/in/tsage1234",
   emailId: "tushargoel15@gmail.com",
-  resumeLink: "",
+  resumeLink:
+    "https://drive.google.com/file/d/1LfFGLCAkEXTZ8TBt3D7TqQu_-hGuPrle/view?usp=drive_link",
   githubLink: "https://github.com/TusharGoelGitsHub",
   journey: "Journey ",
   soFar: " so far",
