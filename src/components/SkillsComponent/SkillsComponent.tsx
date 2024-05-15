@@ -4,6 +4,7 @@ import Footer from "../Footer/Footer";
 import CustomCard from "../CustomCard/CustomCard";
 import { constants } from "../../Constants";
 import { ISkillsItem } from "./SkillsComponent.types";
+import { colors } from "../../Colors";
 
 const SkillsComponent = (props: { data: ISkillsItem[] }): JSX.Element => {
   return (
@@ -14,15 +15,16 @@ const SkillsComponent = (props: { data: ISkillsItem[] }): JSX.Element => {
           paddingTop: 110,
           gap: 5,
           fontSize: 36,
-          color: "#A2A89E",
+          color: colors.offWhite,
           width: "50%",
           margin: "0 0 0 25%",
+          cursor: "default",
         }}
       >
         <span>{constants.skillsHeading}</span>
         <span
           style={{
-            color: "#d8314a",
+            color: colors.redCrimson,
             fontFamily: "Borel",
 
             alignItems: "end",
@@ -41,6 +43,7 @@ const SkillsComponent = (props: { data: ISkillsItem[] }): JSX.Element => {
                 marginTop: index === 0 ? 50 : 0,
                 justifyContent: "center",
                 display: "flex",
+                cursor: "default",
               }}
             >
               <CustomCard key={index} data={item} />

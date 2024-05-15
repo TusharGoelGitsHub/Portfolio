@@ -4,11 +4,13 @@ import AboutPage from "./pages/AboutPage";
 import ExperiencePage from "./pages/ExperiencePage";
 import SkillsPage from "./pages/SkillsPage";
 import HomePage from "./pages/HomePage";
+import ScrollToTop from "./ScrollToTop";
 
 const App = (): JSX.Element => {
   return (
     <React.Fragment>
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />

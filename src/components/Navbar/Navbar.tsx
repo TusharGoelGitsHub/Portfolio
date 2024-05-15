@@ -1,6 +1,7 @@
 import React from "react";
 import { constants } from "../../Constants";
 import { Link } from "react-router-dom";
+import { colors } from "../../Colors";
 
 const Navbar = (): JSX.Element => {
   return (
@@ -13,14 +14,14 @@ const Navbar = (): JSX.Element => {
           width: "100%",
           justifyContent: "space-between",
           alignItems: "center",
-          backgroundColor: "#0c0a09",
+          backgroundColor: colors.backgroundBlack,
           zIndex: 9999,
         }}
       >
         <Link
           to="/"
           style={{
-            color: "#d8314a",
+            color: colors.redCrimson,
             display: "flex",
             justifyContent: "start",
             alignItems: "center",
@@ -46,19 +47,31 @@ const Navbar = (): JSX.Element => {
         >
           <Link
             to="/about"
-            style={{ color: "#A2A89E", fontSize: 16, textDecoration: "none" }}
+            style={{
+              color: colors.offWhite,
+              fontSize: 16,
+              textDecoration: "none",
+            }}
           >
             {constants.about}
           </Link>
           <Link
             to="/skills"
-            style={{ color: "#A2A89E", fontSize: 16, textDecoration: "none" }}
+            style={{
+              color: colors.offWhite,
+              fontSize: 16,
+              textDecoration: "none",
+            }}
           >
             {constants.skills}
           </Link>
           <Link
             to="/experience"
-            style={{ color: "#A2A89E", fontSize: 16, textDecoration: "none" }}
+            style={{
+              color: colors.offWhite,
+              fontSize: 16,
+              textDecoration: "none",
+            }}
           >
             {constants.experience}
           </Link>

@@ -1,5 +1,6 @@
 import React from "react";
 import { constants } from "../../Constants";
+import { colors } from "../../Colors";
 
 const Footer = (): JSX.Element => {
   return (
@@ -20,16 +21,16 @@ const Footer = (): JSX.Element => {
             rel="noopener noreferrer"
             style={{
               textDecoration: "none",
-              color: "#A2A89E",
+              color: colors.offWhite,
               cursor: "pointer",
             }}
             onMouseOver={(e) => {
               e.currentTarget.style.textDecoration = "underline";
-              e.currentTarget.style.color = "#d8314a";
+              e.currentTarget.style.color = colors.redCrimson;
             }}
             onMouseOut={(e) => {
               e.currentTarget.style.textDecoration = "none";
-              e.currentTarget.style.color = "#A2A89E";
+              e.currentTarget.style.color = colors.offWhite;
             }}
           >
             {constants.linkedin}
@@ -40,16 +41,16 @@ const Footer = (): JSX.Element => {
             rel="noopener noreferrer"
             style={{
               textDecoration: "none",
-              color: "#A2A89E",
+              color: colors.offWhite,
               cursor: "pointer",
             }}
             onMouseOver={(e) => {
               e.currentTarget.style.textDecoration = "underline";
-              e.currentTarget.style.color = "#d8314a";
+              e.currentTarget.style.color = colors.redCrimson;
             }}
             onMouseOut={(e) => {
               e.currentTarget.style.textDecoration = "none";
-              e.currentTarget.style.color = "#A2A89E";
+              e.currentTarget.style.color = colors.offWhite;
             }}
           >
             {constants.email}
@@ -60,16 +61,16 @@ const Footer = (): JSX.Element => {
             rel="noopener noreferrer"
             style={{
               textDecoration: "none",
-              color: "#A2A89E",
+              color: colors.offWhite,
               cursor: "pointer",
             }}
             onMouseOver={(e) => {
               e.currentTarget.style.textDecoration = "underline";
-              e.currentTarget.style.color = "#d8314a";
+              e.currentTarget.style.color = colors.redCrimson;
             }}
             onMouseOut={(e) => {
               e.currentTarget.style.textDecoration = "none";
-              e.currentTarget.style.color = "#A2A89E";
+              e.currentTarget.style.color = colors.offWhite;
             }}
           >
             {constants.github}
@@ -80,16 +81,16 @@ const Footer = (): JSX.Element => {
             rel="noopener noreferrer"
             style={{
               textDecoration: "none",
-              color: "#A2A89E",
+              color: colors.offWhite,
               cursor: "pointer",
             }}
             onMouseOver={(e) => {
               e.currentTarget.style.textDecoration = "underline";
-              e.currentTarget.style.color = "#d8314a";
+              e.currentTarget.style.color = colors.redCrimson;
             }}
             onMouseOut={(e) => {
               e.currentTarget.style.textDecoration = "none";
-              e.currentTarget.style.color = "#A2A89E";
+              e.currentTarget.style.color = colors.offWhite;
             }}
           >
             {constants.resume}
@@ -97,7 +98,7 @@ const Footer = (): JSX.Element => {
         </div>
         <div
           style={{
-            color: "#A2A89E",
+            color: colors.offWhite,
             display: "flex",
             justifyContent: "center",
             alignItems: "end",
@@ -114,7 +115,7 @@ const Footer = (): JSX.Element => {
             style={{
               cursor: "pointer",
               textDecoration: "none",
-              color: "#d8314a",
+              color: colors.redCrimson,
               fontFamily: "Borel",
             }}
             onMouseOver={(e) => {

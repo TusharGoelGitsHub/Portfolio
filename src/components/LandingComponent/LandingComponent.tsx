@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import HomeComponent from "../HomeComponent/HomeComponent";
 import { constants } from "../../Constants";
+import { colors } from "../../Colors";
 
 const LandingComponent = (): JSX.Element => {
   const [showName, setShowName] = useState<boolean>(true);
@@ -8,7 +9,7 @@ const LandingComponent = (): JSX.Element => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setShowName(false);
-    }, 3000);
+    }, 1000);
 
     return () => clearTimeout(timeout);
   }, []);
@@ -18,7 +19,7 @@ const LandingComponent = (): JSX.Element => {
       {showName ? (
         <div
           style={{
-            color: "#d8314a",
+            color: colors.redCrimson,
             display: "flex",
             justifyContent: "center",
             alignItems: "center",

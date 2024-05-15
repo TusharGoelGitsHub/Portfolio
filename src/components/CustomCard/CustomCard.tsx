@@ -1,5 +1,6 @@
 import React from "react";
 import { ICustomCardProps } from "./CustomCard.types";
+import { colors } from "../../Colors";
 
 const CustomCard = (props: ICustomCardProps): JSX.Element => {
   return (
@@ -8,9 +9,9 @@ const CustomCard = (props: ICustomCardProps): JSX.Element => {
         style={{
           height: props.height,
           width: "50%",
-          background: "#121217",
+          background: colors.secondaryBlack,
           borderRadius: 8,
-          borderLeft: "5px #d8314a solid",
+          borderLeft: `5px ${colors.redCrimson} solid`,
           paddingLeft: 25,
           paddingBottom: 25,
           paddingRight: 25,
@@ -20,19 +21,21 @@ const CustomCard = (props: ICustomCardProps): JSX.Element => {
             "radial-gradient(circle, #121217 0, #252525 100%)";
         }}
         onMouseOut={(e) => {
-          e.currentTarget.style.background = "#121217";
+          e.currentTarget.style.background = colors.secondaryBlack;
         }}
       >
         {props.data?.mainHeading && (
-          <h2 style={{ fontSize: 30, color: "#d8314a" }}>
+          <h2 style={{ fontSize: 30, color: colors.redCrimson }}>
             {props.data.mainHeading}
           </h2>
         )}
-        <h2 style={{ fontSize: 30, color: "#A2A89E" }}>
+        <h2 style={{ fontSize: 30, color: colors.offWhite }}>
           {props.data.subHeading}
         </h2>
         {props.data?.period && (
-          <p style={{ color: "#6B7280", fontSize: 24 }}>{props.data.period}</p>
+          <p style={{ color: colors.lightGrey, fontSize: 24 }}>
+            {props.data.period}
+          </p>
         )}
         <div>
           {props.data.content.map((val, index) => {
@@ -40,7 +43,7 @@ const CustomCard = (props: ICustomCardProps): JSX.Element => {
               <div
                 key={index}
                 style={{
-                  color: "#A2A89E",
+                  color: colors.offWhite,
                   fontSize: 24,
                   display: "flex",
                   // justifyContent: "space-between",
