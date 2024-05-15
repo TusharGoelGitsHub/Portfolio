@@ -1,12 +1,13 @@
 import React from "react";
 import ReactPlayer from "react-player";
+import { musicContainerStyles, playerStyles } from "./MusicPlayer.styles";
 
 const MusicPlayer = (): JSX.Element => {
   return (
     <React.Fragment>
-      <div style={{ margin: "80px 0", textAlign: "center" }}>
+      <div className={musicContainerStyles}>
         <h2>My Music Player</h2>
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        <div className={playerStyles}>
           <ReactPlayer
             url="bensound-memories.mp3"
             playing={false}

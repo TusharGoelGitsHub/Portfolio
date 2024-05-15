@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import HomeComponent from "../HomeComponent/HomeComponent";
 import { constants } from "../../Constants";
 import { colors } from "../../Colors";
+import { containerStyles } from "./LandingComponent.styles";
 
 const LandingComponent = (): JSX.Element => {
   const [showName, setShowName] = useState<boolean>(true);
@@ -17,23 +18,7 @@ const LandingComponent = (): JSX.Element => {
   return (
     <>
       {showName ? (
-        <div
-          style={{
-            color: colors.redCrimson,
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            height: "100vh",
-            fontSize: "2.25rem",
-            lineHeight: "2.5rem",
-            cursor: "none",
-            pointerEvents: "none",
-            fontFamily: "Borel",
-            fontWeight: 700,
-          }}
-        >
-          {constants.name}
-        </div>
+        <div className={containerStyles}>{constants.name}</div>
       ) : (
         <HomeComponent />
       )}

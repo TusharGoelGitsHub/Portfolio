@@ -4,32 +4,20 @@ import Footer from "../Footer/Footer";
 import CustomCard from "../CustomCard/CustomCard";
 import { constants } from "../../Constants";
 import { ISkillsItem } from "./SkillsComponent.types";
-import { colors } from "../../Colors";
+
+import {
+  itemStyles,
+  skillsHeadingStyles,
+  skillsStyles,
+} from "./SkillsComponent.styles";
 
 const SkillsComponent = (props: { data: ISkillsItem[] }): JSX.Element => {
   return (
     <React.Fragment>
       <Navbar />
-      <p
-        style={{
-          paddingTop: 110,
-          gap: 5,
-          fontSize: 36,
-          color: colors.offWhite,
-          width: "50%",
-          margin: "0 0 0 25%",
-          cursor: "default",
-        }}
-      >
+      <p className={skillsStyles}>
         <span>{constants.skillsHeading}</span>
-        <span
-          style={{
-            color: colors.redCrimson,
-            fontFamily: "Borel",
-
-            alignItems: "end",
-          }}
-        >
+        <span className={skillsHeadingStyles}>
           {constants.skillsExperienced}
         </span>
         <span>{constants.in}</span>
@@ -37,15 +25,7 @@ const SkillsComponent = (props: { data: ISkillsItem[] }): JSX.Element => {
       <div>
         {props.data.map((item, index) => {
           return (
-            <div
-              style={{
-                marginBottom: 50,
-                marginTop: index === 0 ? 50 : 0,
-                justifyContent: "center",
-                display: "flex",
-                cursor: "default",
-              }}
-            >
+            <div className={itemStyles(index)}>
               <CustomCard key={index} data={item} isSkills />
             </div>
           );

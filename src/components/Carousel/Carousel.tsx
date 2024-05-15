@@ -1,6 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { ICarouselData } from "./Carousel.types";
 import CarouselCard from "../CarouselCard/CarouselCard";
+import {
+  carouselContainerStyles,
+  containerStyles,
+  leftButtonStyles,
+  rightButtonStyles,
+} from "./Carousel.styles";
 
 const Carousel = (): JSX.Element => {
   const [currentIndex, setCurrentIndex] = useState<number>(1);
@@ -56,12 +62,7 @@ const Carousel = (): JSX.Element => {
 
   return (
     <div
-      style={{
-        position: "relative",
-        width: "60%",
-        margin: "auto",
-        overflow: "hidden",
-      }}
+      className={carouselContainerStyles}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -74,48 +75,22 @@ const Carousel = (): JSX.Element => {
         }}
         onTransitionEnd={handleTransitionEnd}
       >
-        <div style={{ minWidth: "100%" }}>
+        <div className={containerStyles}>
           <CarouselCard data={ICarouselData[ICarouselData.length - 1]} />
         </div>
         {ICarouselData.map((val, index) => (
-          <div key={index} style={{ minWidth: "100%" }}>
+          <div key={index} className={containerStyles}>
             <CarouselCard data={val} />
           </div>
         ))}
-        <div style={{ minWidth: "100%" }}>
+        <div className={containerStyles}>
           <CarouselCard data={ICarouselData[0]} />
         </div>
       </div>
-      <button
-        onClick={goToPrevious}
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "10px",
-          transform: "translateY(-50%)",
-          background: "none",
-          border: "none",
-          cursor: "pointer",
-          fontSize: "24px",
-          color: "#fff",
-        }}
-      >
+      <button onClick={goToPrevious} className={leftButtonStyles}>
         &#9664;
       </button>
-      <button
-        onClick={goToNext}
-        style={{
-          position: "absolute",
-          top: "50%",
-          right: "10px",
-          transform: "translateY(-50%)",
-          background: "none",
-          border: "none",
-          cursor: "pointer",
-          fontSize: "24px",
-          color: "#fff",
-        }}
-      >
+      <button onClick={goToNext} className={rightButtonStyles}>
         &#9654;
       </button>
     </div>

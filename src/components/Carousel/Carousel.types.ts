@@ -1,4 +1,4 @@
-import { constants } from "../Constants";
+import { constants } from "../../Constants";
 
 export interface ICarouselProps {
   heading: string;

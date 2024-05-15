@@ -1,71 +1,39 @@
 import React from "react";
 import { IHomeCustomCardProps } from "./HomeCustomCard.types";
-import { colors } from "../../Colors";
 import { Link } from "react-router-dom";
 import MusicPlayer from "../MusicPlayer/MusicPlayer";
+import {
+  componentContainerStyles,
+  homeCardContainerStyles,
+  linkStyles,
+} from "./HomeCustomCard.styles";
 
 const HomeCustomCard = (props: IHomeCustomCardProps): JSX.Element => {
   return (
     <React.Fragment>
       <div
-        style={{
-          margin: props.margin,
-          color: colors.offWhite,
-          fontSize: props.font,
-          background: colors.secondaryBlack,
-          padding: props.padding,
-          borderRadius: 8,
-          width: props.width,
-          height: props.height,
-          display: props.isMusicPlayer ? "block" : "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          cursor: "default",
-        }}
-        onMouseOver={(e) => {
-          e.currentTarget.style.background =
-            "radial-gradient(circle, #121217 0, #252525 100%)";
-        }}
-        onMouseOut={(e) => {
-          e.currentTarget.style.background = colors.secondaryBlack;
-        }}
+        className={homeCardContainerStyles(
+          props.margin,
+          props.font,
+          props.padding,
+          props.width,
+          props.height,
+          props.isMusicPlayer
+        )}
       >
-        <div style={{ textAlign: "center", cursor: "pointer" }}>
+        <div className={componentContainerStyles}>
           {props.link && (
             <a
               href={props.link}
               target="_blank"
               rel="noopener noreferrer"
-              style={{
-                textDecoration: "none",
-                color: colors.offWhite,
-                cursor: "pointer",
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.textDecoration = "underline";
-                e.currentTarget.style.color = colors.redCrimson;
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.textDecoration = "none";
-                e.currentTarget.style.color = colors.offWhite;
-              }}
+              className={linkStyles}
             >
               {props.heading}
             </a>
           )}
           {props.redirectLink && (
-            <Link
-              to={props.redirectLink}
-              style={{ color: colors.offWhite, textDecoration: "none" }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.textDecoration = "underline";
-                e.currentTarget.style.color = colors.redCrimson;
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.textDecoration = "none";
-                e.currentTarget.style.color = colors.offWhite;
-              }}
-            >
+            <Link to={props.redirectLink} className={linkStyles}>
               {props.heading}
             </Link>
           )}
@@ -73,19 +41,7 @@ const HomeCustomCard = (props: IHomeCustomCardProps): JSX.Element => {
             <a
               href="/TusharGoel_SoftwareEngineer__3YOE.pdf"
               download="Tushar_Goel_resume.pdf"
-              style={{
-                textDecoration: "none",
-                color: colors.offWhite,
-                cursor: "pointer",
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.textDecoration = "underline";
-                e.currentTarget.style.color = colors.redCrimson;
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.textDecoration = "none";
-                e.currentTarget.style.color = colors.offWhite;
-              }}
+              className={linkStyles}
             >
               {props.heading}
             </a>

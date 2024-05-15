@@ -5,59 +5,43 @@ import { colors } from "../../Colors";
 import { constants } from "../../Constants";
 import { Link } from "react-router-dom";
 import HireMeComponent from "../HireMeComponent/HireMeComponent";
-import Carousel from "../../Carousel/Carousel";
+import Carousel from "../Carousel/Carousel";
+import {
+  linkStyles,
+  homeContainerStyles,
+  introStyles,
+  companyStyles,
+  experienceStyles,
+  experienceLinkStyles,
+  aboutContainerStyles,
+  aboutStyles,
+  buttonStyles,
+  hireStyles,
+  intro2Styles,
+  carouselContainerStyles,
+  headingStyles,
+  perfectStyles,
+} from "./HomeComponent.styles";
 
 const HomeComponent = (): JSX.Element => {
   return (
     <React.Fragment>
       <Navbar />
-      <h1
-        style={{
-          textDecoration: "none",
-          paddingTop: 370,
-
-          fontSize: "6rem",
-          fontFamily: "borel",
-          margin: "0 10% 100px",
-          cursor: "pointer",
-        }}
-      >
-        <Link
-          to="/about"
-          style={{ textDecoration: "none", color: colors.offWhite }}
-          onMouseOver={(e) => {
-            e.currentTarget.style.textDecoration = "underline";
-            e.currentTarget.style.color = colors.redCrimson;
-          }}
-          onMouseOut={(e) => {
-            e.currentTarget.style.textDecoration = "none";
-            e.currentTarget.style.color = colors.offWhite;
-          }}
-        >
+      <h1 className={homeContainerStyles}>
+        <Link to="/about" className={linkStyles}>
           {constants.name}
         </Link>
       </h1>
-      <div
-        style={{
-          margin: "120px 10% 0",
-          color: colors.offWhite,
-          cursor: "default",
-          fontSize: 30,
-        }}
-      >
+      <div className={introStyles}>
         <div>{constants.homeIntroduction1}</div>
         <div>
           {constants.homeIntroduction2}
-          <span style={{ color: colors.redCrimson, cursor: "pointer" }}>
+          <span className={intro2Styles}>
             <a
               href={constants.maqSoftwareLink}
               target="_blank"
               rel="noopener noreferrer"
-              style={{
-                textDecoration: "none",
-                color: colors.redCrimson,
-                cursor: "pointer",
-              }}
+              className={companyStyles}
             >
               {`@${constants.maqSoftware}`}
             </a>
@@ -66,61 +50,29 @@ const HomeComponent = (): JSX.Element => {
         <div>{constants.homeIntroduction3}</div>
         <div>
           {constants.homeIntroduction4}
-          <span style={{ cursor: "pointer" }}>
-            <Link
-              to="/experience"
-              style={{ textDecoration: "none", color: colors.redCrimson }}
-            >
+          <span className={experienceStyles}>
+            <Link to="/experience" className={experienceLinkStyles}>
               {constants.experience.toLowerCase()}
             </Link>
           </span>
         </div>
       </div>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <div
-          style={{
-            color: colors.offWhite,
-            cursor: "pointer",
-            border: `1px ${colors.offWhite} solid`,
-            fontSize: "1.25rem",
-            padding: 8,
-            width: 160,
-            borderRadius: 8,
-            margin: "24px 0",
-          }}
-        >
+      <div className={aboutContainerStyles}>
+        <div className={aboutStyles}>
           <Link
             to="/about"
-            style={{
-              color: colors.offWhite,
-              textDecoration: "none",
-            }}
+            className={buttonStyles}
           >{`${constants.moreAboutMe} >`}</Link>
         </div>
       </div>
-      <div style={{ marginTop: 200 }}>
+      <div className={hireStyles}>
         <HireMeComponent />
       </div>
-      <div style={{ marginTop: 100, marginBottom: 70 }}>
-        <div
-          style={{
-            color: colors.offWhite,
-            fontSize: 36,
-            textAlign: "center",
-            marginBottom: 40,
-          }}
-        >
-          {constants.everythingYouNeed}{" "}
-          <span style={{ color: colors.redCrimson, fontFamily: "borel" }}>
-            {constants.perfect}
-          </span>
+      <div className={carouselContainerStyles}>
+        <div className={headingStyles}>
+          {constants.everythingYouNeed}
+          <span className={perfectStyles}>{constants.perfect}</span>
           {constants.website}
         </div>
         <Carousel />

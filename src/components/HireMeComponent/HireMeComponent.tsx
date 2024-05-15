@@ -1,19 +1,14 @@
 import React from "react";
 import HomeCustomCard from "../HomeCustomCard/HomeCustomCard";
 import { constants } from "../../Constants";
+import { cardStyles, hireContainerStyles } from "./HireMeComponent.styles";
 
 const HireMeComponent = (): JSX.Element => {
   return (
     <React.Fragment>
       <div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <div style={{ width: "49%" }}>
+        <div className={hireContainerStyles}>
+          <div className={cardStyles}>
             <HomeCustomCard
               heading={constants.visitGithubProfile}
               font={24}
@@ -23,7 +18,7 @@ const HireMeComponent = (): JSX.Element => {
               link={constants.githubLink}
             />
           </div>
-          <div style={{ width: "49%" }}>
+          <div className={cardStyles}>
             <HomeCustomCard
               heading={constants.workDesc}
               font={24}
@@ -34,14 +29,8 @@ const HireMeComponent = (): JSX.Element => {
             />
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <div style={{ width: "49%" }}>
+        <div className={hireContainerStyles}>
+          <div className={cardStyles}>
             <HomeCustomCard
               heading={constants.visitLinkedin}
               font={24}
@@ -51,7 +40,7 @@ const HireMeComponent = (): JSX.Element => {
               link={constants.linkedinLink}
             />
           </div>
-          <div style={{ width: "49%" }}>
+          <div className={cardStyles}>
             <HomeCustomCard
               heading={constants.technologies}
               font={24}
@@ -63,14 +52,8 @@ const HireMeComponent = (): JSX.Element => {
           </div>
         </div>
 
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <div style={{ width: "49%" }}>
+        <div className={hireContainerStyles}>
+          <div className={cardStyles}>
             <HomeCustomCard
               heading={constants.downloadMyResume}
               font={24}
@@ -80,7 +63,7 @@ const HireMeComponent = (): JSX.Element => {
               isDownloadResume
             />
           </div>
-          <div style={{ width: "49%" }}>
+          <div className={cardStyles}>
             <HomeCustomCard
               font={24}
               margin={"0 1% 14px"}

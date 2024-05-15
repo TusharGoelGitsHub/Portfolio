@@ -4,7 +4,11 @@ import Footer from "../Footer/Footer";
 import CustomCard from "../CustomCard/CustomCard";
 import { IExperienceItem } from "./ExperienceComponent.types";
 import { constants } from "../../Constants";
-import { colors } from "../../Colors";
+import {
+  dataStyles,
+  experienceContainerStyles,
+  headingStyles,
+} from "./ExperienceComponent.styles";
 
 const ExperienceComponent = (props: {
   data: IExperienceItem[];
@@ -12,38 +16,14 @@ const ExperienceComponent = (props: {
   return (
     <React.Fragment>
       <Navbar />
-      <div
-        style={{
-          paddingTop: 110,
-          gap: 5,
-          fontSize: 36,
-          color: colors.offWhite,
-          marginLeft: "25%",
-          cursor: "default",
-        }}
-      >
-        <span
-          style={{
-            color: colors.redCrimson,
-            fontFamily: "Borel",
-          }}
-        >
-          {constants.journey}
-        </span>
+      <div className={experienceContainerStyles}>
+        <span className={headingStyles}>{constants.journey}</span>
         <span>{constants.soFar}</span>
       </div>
       <div>
         {props.data.map((item, index) => {
           return (
-            <div
-              style={{
-                marginBottom: 50,
-                marginTop: index === 0 ? 50 : 0,
-                justifyContent: "center",
-                display: "flex",
-                cursor: "default",
-              }}
-            >
+            <div className={dataStyles(index)}>
               <CustomCard key={index} data={item} />
             </div>
           );
