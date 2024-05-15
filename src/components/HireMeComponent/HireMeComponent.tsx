@@ -13,35 +13,24 @@ const HireMeComponent = (): JSX.Element => {
             alignItems: "center",
           }}
         >
-          <div style={{ width: "25%" }}>
-            <div>
-              <HomeCustomCard
-                heading={constants.visitGithubProfile}
-                font={20}
-                margin={"0 1% 14px"}
-                padding={16}
-                height={278}
-                link={constants.githubLink}
-              />
-            </div>
-            <div>
-              <HomeCustomCard
-                heading={constants.workDesc}
-                font={20}
-                margin={"0 1% 14px"}
-                padding={16}
-                height={278}
-                redirectLink={"/experience"}
-              />
-            </div>
-          </div>
-          <div style={{ width: "73%" }}>
+          <div style={{ width: "49%" }}>
             <HomeCustomCard
-              font={20}
+              heading={constants.visitGithubProfile}
+              font={24}
               margin={"0 1% 14px"}
               padding={16}
-              height={600}
-              isTodoApp
+              height={278}
+              link={constants.githubLink}
+            />
+          </div>
+          <div style={{ width: "49%" }}>
+            <HomeCustomCard
+              heading={constants.workDesc}
+              font={24}
+              margin={"0 1% 14px"}
+              padding={16}
+              height={278}
+              redirectLink={"/experience"}
             />
           </div>
         </div>
@@ -52,38 +41,28 @@ const HireMeComponent = (): JSX.Element => {
             alignItems: "center",
           }}
         >
-          <div style={{ width: "25%" }}>
-            <div>
-              <HomeCustomCard
-                heading={constants.visitLinkedin}
-                font={20}
-                margin={"0 1% 14px"}
-                padding={16}
-                height={278}
-                link={constants.linkedinLink}
-              />
-            </div>
-            <div>
-              <HomeCustomCard
-                heading={constants.technologies}
-                font={20}
-                margin={"0 1% 14px"}
-                padding={16}
-                height={278}
-                redirectLink={"/skills"}
-              />
-            </div>
-          </div>
-          <div style={{ width: "73%" }}>
+          <div style={{ width: "49%" }}>
             <HomeCustomCard
-              font={20}
+              heading={constants.visitLinkedin}
+              font={24}
               margin={"0 1% 14px"}
               padding={16}
-              height={600}
-              isTicTacToeGame
+              height={278}
+              link={constants.linkedinLink}
+            />
+          </div>
+          <div style={{ width: "49%" }}>
+            <HomeCustomCard
+              heading={constants.technologies}
+              font={24}
+              margin={"0 1% 14px"}
+              padding={16}
+              height={278}
+              redirectLink={"/skills"}
             />
           </div>
         </div>
+
         <div
           style={{
             display: "flex",
@@ -103,8 +82,8 @@ const HireMeComponent = (): JSX.Element => {
           </div>
           <div style={{ width: "49%" }}>
             <HomeCustomCard
-              font={20}
-              margin={"0 1.5% 14px 1%"}
+              font={24}
+              margin={"0 1% 14px"}
               padding={16}
               height={278}
               isMusicPlayer

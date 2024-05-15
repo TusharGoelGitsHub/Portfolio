@@ -3,8 +3,6 @@ import { IHomeCustomCardProps } from "./HomeCustomCard.types";
 import { colors } from "../../Colors";
 import { Link } from "react-router-dom";
 import MusicPlayer from "../MusicPlayer/MusicPlayer";
-import TicTacToe from "../TicTacToe/TicTacToe";
-import TodoApp from "../TodoApp/TodoApp";
 
 const HomeCustomCard = (props: IHomeCustomCardProps): JSX.Element => {
   return (
@@ -93,14 +91,11 @@ const HomeCustomCard = (props: IHomeCustomCardProps): JSX.Element => {
             </a>
           )}
           {props.isMusicPlayer && <MusicPlayer />}
-          {props.isTicTacToeGame && <TicTacToe />}
-          {props.isTodoApp && <TodoApp />}
+
           {!props.link &&
             !props.redirectLink &&
             !props.isDownloadResume &&
             !props.isMusicPlayer &&
-            !props.isTicTacToeGame &&
-            !props.isTodoApp &&
             props.heading}
         </div>
       </div>

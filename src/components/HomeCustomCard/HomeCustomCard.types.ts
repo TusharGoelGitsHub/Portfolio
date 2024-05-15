@@ -9,6 +9,4 @@ export interface IHomeCustomCardProps {
   redirectLink?: string;
   isDownloadResume?: boolean;
   isMusicPlayer?: boolean;
-  isTicTacToeGame?: boolean;
-  isTodoApp?: boolean;
 }
