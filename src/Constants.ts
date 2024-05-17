@@ -66,7 +66,5 @@ export const constants = {
   visitLinkedin: "Visit my LinkedIn Profile",
   technologies: "Technologies, Languages & Frameworks I am Skilled in",
   visitGithubProfile: "Visit my Github Profile",
-  work: "WORK",
   workDesc: "Read my Experience",
-  ticTacToeGame: "Tic Tac Toe",
 };
