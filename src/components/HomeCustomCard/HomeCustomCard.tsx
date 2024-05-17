@@ -39,8 +39,8 @@ const HomeCustomCard = (props: IHomeCustomCardProps): JSX.Element => {
           )}
           {props.isDownloadResume && (
             <a
-              href="/TusharGoel_SoftwareEngineer__3YOE.pdf"
-              download="Tushar_Goel_resume.pdf"
+              href="/TusharGoel_SoftwareEngineer.pdf"
+              download="TusharGoel_SoftwareEngineer.pdf"
               className={linkStyles}
             >
               {props.heading}
