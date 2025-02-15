@@ -87,7 +87,7 @@ const Carousel = (): JSX.Element => {
           <CarouselCard data={ICarouselData[0]} />
         </div>
       </div>
-      <button onClick={goToPrevious} className={leftButtonStyles}>
+      <button role="test" onClick={goToPrevious} className={leftButtonStyles}>
         &#9664;
       </button>
       <button onClick={goToNext} className={rightButtonStyles}>
