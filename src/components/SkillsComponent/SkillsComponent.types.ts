@@ -20,7 +20,7 @@ export const SkillsData: ISkillsItem[] = [
   },
   {
     subHeading: "Tools",
-    content: ["VS Code", "Postman"],
+    content: ["VS Code", "Postman", "Copado Automation Tool"],
   },
   {
     subHeading: "Version Control",

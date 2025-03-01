@@ -38,12 +38,12 @@ const HomeComponent = (): JSX.Element => {
           {constants.homeIntroduction2}
           <span className={intro2Styles}>
             <a
-              href={constants.maqSoftwareLink}
+              href={constants.nielsenLink}
               target="_blank"
               rel="noopener noreferrer"
               className={companyStyles}
             >
-              {`@${constants.maqSoftware}`}
+              {`@${constants.nielsen}`}
             </a>
           </span>
         </div>

@@ -55,9 +55,18 @@ const AboutComponent = (): JSX.Element => {
             fontFamily: "borel",
           }}
         >
-          {constants.maqSoftware}
+          {constants.nielsen}
         </span>
         <span>{constants.introduction2}</span>
+        <span
+          style={{
+            color: colors.redCrimson,
+            fontFamily: "borel",
+          }}
+        >
+          {constants.maqSoftware}
+        </span>
+        <span> & </span>
         <span
           style={{
             color: colors.redCrimson,

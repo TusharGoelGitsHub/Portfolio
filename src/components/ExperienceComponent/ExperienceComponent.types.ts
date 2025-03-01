@@ -7,9 +7,21 @@ export interface IExperienceItem {
 
 export const ExperienceData: IExperienceItem[] = [
   {
+    mainHeading: "Software Engineer 2",
+    subHeading: "Nielsen",
+    period: "June 2024 - Present",
+    content: [
+      "Contributed to the Global Panelist Portal (GPP) team, enhancing the UI using React and TypeScript for a better user experience.",
+      "Fixed production bugs, reducing the production ticket volume by 50% and improving system stability.",
+      "Designed automation scripts using the Copado automation tool, enabling early issue detection before deployment to production.",
+      "Led the migration of GPP from IFLv1 to IFLv2, leveraging React and TypeScript to enhance UI and introduce new features for improved functionality.",
+      "Partnered with cross-functional teams to develop, and deploy frontend components, enhancing product integration capabilities.",
+    ],
+  },
+  {
     mainHeading: "Software Engineer",
     subHeading: "MAQ Software",
-    period: "Mar 2023 - Present",
+    period: "Mar 2023 - May 2024",
     content: [
       "Engineered a strategic partnership with Microsoft's Business Value Management Team to launch and execute a React-based application, resulting in an uptick in productivity and efficiency for the Azure Sales Team at Microsoft.",
       "Transformed complex business strategies into a user-friendly interface, fostering deep understanding of value creation and strategic planning, resulting in a 40% increase in stakeholder engagement and a 25% improvement in strategic alignment. ",

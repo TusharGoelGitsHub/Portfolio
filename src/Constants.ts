@@ -22,23 +22,24 @@ export const constants = {
   in: "in",
   hi: "Hi",
   iAm: "i am",
+  nielsen: "Nielsen",
   maqSoftware: "MAQ Software",
   tcs: "Tata Consultancy Services",
   introduction1:
-    "I'm all about making websites look cool and work smoothly. I love turning designs into real, clickable things on the internet. With more than 3 years of experience with React.js, JavaScript and TypeScript, I'm currently working as a Software Engineer at ",
+    "I'm all about making websites look cool and work smoothly. I love turning designs into real, clickable things on the internet. With more than 4 years of experience with React.js, JavaScript and TypeScript, I'm currently working as a Software Engineer at ",
   introduction2: " and have actively collaborated within ",
   introduction3:
     "frontend team, contributing significantly to various projects in the past.",
   introduction4:
     "I have a deep appreciation for exploring and understanding diverse cultures, thought processes, and I thoroughly enjoy engaging in conversations about anything and everything interesting.",
   homeIntroduction1:
-    "Software Engineer/ Frontend Developer based in Noida, India.",
-  homeIntroduction2: "Currently working as a Software Engineer ",
+    "Software Engineer/ Frontend Developer based in Gurgaon, India.",
+  homeIntroduction2: "Currently working as a Software Engineer 2 ",
   homeIntroduction3:
     "Always exploring, forever crafting, and continuously challenging myself.",
   homeIntroduction4:
-    "Proficient in JavaScript and its frameworks with 3+ years of industry ",
-  maqSoftwareLink: "https://www.maqsoftware.com",
+    "Proficient in JavaScript and its frameworks with 4+ years of industry ",
+  nielsenLink: "https://www.nielsen.com/",
   moreAboutMe: "more about me",
   whyShouldHireMe: "Why should you hire me?",
   everythingYouNeed: "Everything you need for a ",
